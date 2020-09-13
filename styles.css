@@ -1,0 +1,222 @@
+
+/*CSS for th body*/
+html, body {
+    background-image: url('images/whiskycellar.jpg');
+    background-color: #292929;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+/*Hide scrollbar for IE, Edge(old) and firefox*/
+.scroller {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox  (i know i know css3)*/
+}
+
+
+
+
+/*Navigation background*/
+.nav-pills {
+    text-align: center;
+    background-color: rgba(12,5,3,0.85);
+    opacity: 0.85;
+}
+    /*Not active menu*/
+    .nav-pills .pill .nav-link {
+        color: rgba(131,93,72,0.85);
+        font-family: 'Marko One', serif;
+        font-weight: bold;
+    }
+        /*mouse over menu*/
+        .nav-pills .pill .nav-link:hover {
+            color: rgba(131,93,72,0.6);
+            font-family: 'Marko One', serif;
+            font-weight: bold;
+        }
+        /*Active menu*/
+        .nav-pills .pill .nav-link.active {
+            color: rgba(12,5,3,0.85);
+            background-color: rgba(131,93,72,0.6);
+            font-family: 'Marko One', serif;
+            font-weight: bold;
+        }
+
+
+
+
+/*Mainheader 3D turning elipse*/
+:root {
+    --dist-one: translateZ(3rem);
+    --dist-two: translateZ(6rem);
+}
+
+.mainHeader {
+    align-self: center;
+}
+
+.mainHeader_Content {
+    position: relative;
+    height: 215px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+
+.mainHeader:hover .mainHeader_Content {
+    transform: rotateY(.5turn);
+}
+
+.mainHeader_Front,
+.mainHeader_Back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 6em 1em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+    height: 150px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50% 50%;
+    border-color: rgba(131,93,72,0.3);
+    background-color: rgba(12,5,3,0.85);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.9) !important;
+}
+
+.mainHeader_Back {
+    transform: rotateY(.5turn);
+}
+
+.mainHeader_Front_Title {
+    font-family: 'Marko One', serif;
+    color: rgba(251,232,206,1);
+    font-weight: bold;
+    transform: var(--dist-two);
+    text-shadow: 2px 2px 10px rgba(12,5,3,0.85);
+}
+
+.mainHeader_Front_SubTitle {
+    transform: var(--dist-one);
+    font-family: 'Marko One', serif;
+    color: rgba(131,93,72,0.6);
+    text-shadow: 2px 2px 10px rgba(12,5,3,0.85);
+}
+
+.mainHeader_Back_Title {
+    font-family: 'Marko One', serif;
+    color: rgba(251,232,206,1);
+    font-weight: bold;
+    transform: var(--dist-two);
+    text-shadow: 2px 2px 10px rgba(12,5,3,0.85);
+}
+
+.mainHeader_Back_SubTitle {
+    transform: var(--dist-one);
+    font-family: 'Marko One', serif;
+    color: rgba(131,93,72,0.6);
+    text-shadow: 2px 2px 10px rgba(12,5,3,0.85);
+}
+
+
+
+
+/*CSS for the mainbody*/
+.mainBody {
+    position: relative;
+    background-color: rgba(12,5,3,0.85);
+    border-style: solid;
+    border-radius: 25px 25px;
+    border-color: rgba(131,93,72,0.3);
+    border-width: 4px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.9) !important;
+    margin: 0px 0px 15px 0px;
+    padding: 10px;
+}
+
+    .mainBody .image {
+        border-radius: 15px 15px 15px 15px !important;
+    }
+
+    .mainBody p {
+        font-family: 'Marko One', serif;
+        margin: 15px;
+        color: rgba(251,232,206,1);
+    }
+
+    .mainBody h3 {
+        font-family: 'Marko One', serif;
+        margin: 15px;
+        color: rgba(251,232,206,1);
+        font-weight: bold;
+    }
+
+    .mainBody h4 {
+        font-family: 'Marko One', serif;
+        margin: 15px;
+        color: rgba(251,232,206,1);
+    }
+
+    .mainBody h5 {
+        font-family: 'Marko One', serif;
+        margin: 15px;
+        color: rgba(251,232,206,1);
+    }
+
+
+
+
+/*CSS for the footer*/
+.footer {
+    font-family: 'Marko One', serif;
+    color: rgba(251,232,206,1);
+    text-align: center;
+    position: relative;
+    border-style: solid;
+    opacity: 0.7;
+    display: table-row;
+    height: 0;
+}
+
+    .footer a:link {
+        font-family: 'Marko One', serif;
+        color: rgba(131,93,72,0.85);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .footer a:visited {
+        font-family: 'Marko One', serif;
+        color: rgba(131,93,72,0.85);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .footer a:hover {
+        font-family: 'Marko One', serif;
+        color: rgba(131,93,72,0.95);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .footer a:active {
+        font-family: 'Marko One', serif;
+        color: rgba(131,93,72,0.95);
+        text-decoration: underline;
+        font-weight: bold;
+    }
